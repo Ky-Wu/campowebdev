@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 72c5df5763add274a9198a2e94fa62f9cd4283e2 Kyle <kylelinwu@gmail.com> 1526240945 -0700	commit (initial): Initialize repository
+72c5df5763add274a9198a2e94fa62f9cd4283e2 aad0b65535064d66d1ed8ec56c4c14587c007c09 Kyle <kylelinwu@gmail.com> 1526253296 -0700	commit: Set up bootstrapped devise
+aad0b65535064d66d1ed8ec56c4c14587c007c09 652799ef7af1c680fab54cd585988c00ef980562 Kyle <kylelinwu@gmail.com> 1526256167 -0700	commit: Add proto-navbar
+652799ef7af1c680fab54cd585988c00ef980562 6a733d4305db48ef798deb16c34626a18aa31bc3 Kyle <kylelinwu@gmail.com> 1529461618 -0700	commit: Added basic typography and background colors
+6a733d4305db48ef798deb16c34626a18aa31bc3 1778991de5ab93e6ed4cca140addb382ce67a0da Kyle <kylelinwu@gmail.com> 1530479441 -0700	commit: Add request model and new request form
