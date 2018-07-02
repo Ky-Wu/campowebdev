@@ -1,5 +1,7 @@
 class RequestsController < ApplicationController
   before_action :set_request, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+  before_action :exclude_banned_users
 
   # GET /requests
   def index
@@ -53,6 +55,14 @@ class RequestsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def request_params
-      params.fetch(:request, {})
+      params.require(:request).permit(:owner, :contact, :description, :deadline)
+    end
+
+    #Do not allow banned users to interact with requests
+    def exclude_banned_users
+      if current_user.banned?
+        flash[:alert] = "You have been denied request privledges."
+	redirect_to root_url
+      end
     end
 end

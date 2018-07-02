@@ -1,10 +1,7 @@
 <%= simple_form_for @request do |f| %>
-  <div class="form-row">
-    <%= f.input :organization, label: "Name of owner/organization:", wrapper_html: { class: "col-md-6" }, required: true %>
-    <%= f.input :contact, label: "Contact email/phone:", wrapper_html: { class: "col-md-6" }, required: true %>
-  </div>
-  <div class="form-row">
-    <%= f.input :description, as: :text, label: "Brief description of main desired features and pages:", :input_html => { rows: 7 }, wrapper_html: { class: "col-md-12" } %>
-  </div>
+  <%= f.input :owner, label: "Name of owner/organization:", wrapper_html: { class: "col-md-6" }, required: true %>
+  <%= f.input :contact, label: "Contact email/phone:", wrapper_html: { class: "col-md-6" }, required: true %>
+  <%= f.input :description, as: :text, label: "Brief description of main desired features and pages:", :input_html => { rows: 7 }, wrapper_html: { class: "col-md-12" } %>
+  <%= f.input :deadline, label: "If you have a deadline, please explain it below:", wrapper_html: { class: "col-md-12" } %>
   <%= f.button :submit, "Submit Request", class: "btn btn-primary center-block" %>
 <% end %>
