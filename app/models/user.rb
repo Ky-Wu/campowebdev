@@ -8,7 +8,7 @@ class User < ApplicationRecord
   APPROVED_DOMAINS = ["auhsdschools.org"]
   def domain_check
     unless APPROVED_DOMAINS.any? { |word| email.end_with?(word) }
-      errors.add(:email, "is not an auhsdschools.org email (Campo students only" )
+      errors.add(:email, "is not an auhsdschools.org email (Campo students only)" )
     end
   end
 end
