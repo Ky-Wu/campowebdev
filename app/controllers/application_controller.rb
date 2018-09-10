@@ -1,5 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
+  before_action :set_form_links
+  
   DISPLAY_TEXTS = ["We make websites and stuff.",
                    "Is this your favorite website?",
                    "We make stuff like websites.",
@@ -15,4 +17,11 @@ class ApplicationController < ActionController::Base
                    "We make people for websites. That came out wrong.",
                    "We offer free web development services for Campolindo.",
                    "In this club, you will learn that 'Inspect Element' isn't hacking."]
+
+  def set_form_links
+    @request_form_link = "https://goo.gl/forms/HzZyqNGCM3IzYYiN2"
+    @recruit_form_link = "https://goo.gl/forms/QwPv3ScahpI4g8IL2"
+    @feedback_form_link = "https://goo.gl/forms/fddAqn6ZiTbLj85l2"
+  end
+
 end
