@@ -16,30 +16,14 @@
       <ul class="nav navbar-nav">
         <li><%= link_to "Contact", contact_path %></li>
         <li><%= link_to "About", about_path %></li>
-        <li class="dropdown">
+        <!-- li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Introduction</a></li>
             <li><a href="#">Free Learning Material</a></li>
             <li><a href="#">Forms</a></li>
           </ul>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <% if user_signed_in? %>
-          <li><%= link_to "Submit a Request", new_request_path %></li>
-	  <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Requests</a></li>
-              <li role="separator" class="divider"></li>
-              <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-            </ul>
-	  </li>
-	<% else %>
-	  <li><%= link_to 'Login', login_path %></li>
-	  <li><%= link_to 'Register', sign_up_path %></li>
-	<% end %>
+        </li --!>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

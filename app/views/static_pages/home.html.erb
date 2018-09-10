@@ -1,2 +1,69 @@
-<h1 class="display-1 text-center">Campo Web Development</h1>
-<p class="lead text-center"><em>We make websites and stuff.</em></p>
+<h1 class="display-1 text-center">Campolindo<br> Web Development</h1>
+<p class="lead text-center"><em><%= @display_text %></em></p>
+<div class="container-fluid">
+  <div class="row no-gutters forms">
+    <div class="col-sm-6 equal-height bg-primary text-center">
+      <h2 class="text-center">
+        Joining
+      </h2>
+      <hr>
+      <%= link_to "Signup Form", "#", target: "_blank", class: "btn btn-success form-button" %>
+      <p>Fill out the form above so we can register you into the club. Our club meetings occur every Wednesday lunch in B12. All new members are welcome to join any time they'd like.</p>
+    </div>
+    <div class="col-sm-6 equal-height bg-success text-center text-dark">
+      <h2 class="text-center text-dark">
+        Requesting your own website
+      </h2>
+      <hr>
+      <%= link_to "Website Request Form", "#", target: "_blank", class: "btn btn-success form-button" %>
+      <p class="text-dark">Any Campolindo student or faculty is allowed to submit a request for their own personal website. We cannot guarantee that we will get to everyone, but we will try to at least reply, using the contact info you supply.</p>
+    </div>
+  </div>
+</div>
+<div class="tech-explanation container-fluid bg-light text-dark">
+    <h1 class="text-dark text-center">What we Do</h1>
+    <hr>
+    <p class="text-dark">Web developers have many tools, and there is no best combination to create the best website. We prioritize tools that are most friendly to new web developers. Some of the tools we use are explained below, but this is not an exhaustive list.</p>
+  <div class="row">
+    <div class="col-xs-8 text-center">
+      <p class="text-dark">In this club, the majority of our time will be spent dealing with front-end development. Front-end development is essentially about how you actually view content in your browser. HTML deals with the structure, CSS with the styling (how nice and pretty it is), and Javascript with dynamically changing elements.</p>
+    </div>
+    <div class="col-xs-4 text-left">
+      <%= image_tag "/img/html-css-js-icons.png", class: "img-responsive" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-8 text-center">
+      <p class="text-dark">However, styling using CSS is quite repetitive. Although each website looks different, it would be much more convenient to have some code to use as a foundation for our own custom styling. For this, we use Bootstrap, a front-end framework. If CSS is paint on a canvas, then Bootstrap is an industry-standard paint brush and color palette.</p>
+    </div>
+    <div class="col-xs-4 text-left">
+      <%= image_tag "/img/bootstrap-icon.png", class: "img-responsive" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-8 text-center">
+      <p class="text-dark">For static websites that only rely on the tools used above, we can put these static files on Github Pages for free. They allow us to pick any subdomain as well, although with some limitations.</p>
+    </div>
+    <div class="col-xs-4 text-center">
+      <%= image_tag "/img/github-pages-icon.png", class: "img-responsive" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-8 text-center">
+      <p class="text-dark">But, sometimes the tools above aren't enough. These tools are great, but they are limited in that they don't allow any interaction with the user. What if we wanted a user login system or wanted to store user input in a database? For this, we need a back-end/server-side framework. That's Ruby on Rails.<p>
+      <p class="text-dark">Ruby on Rails is a framework, not a programming language. The actual programming languae it's based upon, and the main one we'll be using in this club, is Ruby. The language is called Ruby, and the framework's short name is Rails.</p>
+    </div>
+    <div class="col-xs-4 text-left">
+      <%= image_tag "/img/ruby-on-rails-icon.png", class: "img-responsive" %>
+    </div>
+  </div> 
+  <div class="row">
+    <div class="col-xs-8 text-center">
+      <p class="text-dark">When we use Ruby on Rails, we need to host our server somewhere. Github Pages can serve static files, but it can't host a Ruby on Rails web app. Thus, we turn to Heroku, whose free tier services are more than enough for the small-scale web apps we are working with.</p>
+    </div>
+    <div class="col-xs-4 text-left">
+      <%= image_tag "/img/heroku-icon.png", class: "img-responsive" %>
+    </div>
+  </div>
+
+</div>
