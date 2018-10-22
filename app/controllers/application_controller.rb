@@ -19,8 +19,8 @@ class ApplicationController < ActionController::Base
                    "In this club, you will learn that 'Inspect Element' isn't hacking."]
 
   def set_form_links
-    @request_form_link = "https://goo.gl/forms/HzZyqNGCM3IzYYiN2"
-    @recruit_form_link = "https://goo.gl/forms/QwPv3ScahpI4g8IL2"
+    @recruit_form_link = "https://goo.gl/forms/HzZyqNGCM3IzYYiN2"
+    @request_form_link = "https://goo.gl/forms/QwPv3ScahpI4g8IL2"
     @feedback_form_link = "https://goo.gl/forms/fddAqn6ZiTbLj85l2"
   end
 
